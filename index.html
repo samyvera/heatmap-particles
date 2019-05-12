@@ -16,10 +16,14 @@
 <body>
     <nav>
         <div class="container">
-            <div class="option"><label>Radius </label><input type="range" id="radius" value="25" min="0" max="50"/></div>
-            <div class="option"><label>Blur </label><input type="range" id="blur" value="25" min="0" max="25"/></div>
-            <div class="option"><label>Intensity </label><input type="range" id="intensity" value="100" min="0" max="100"/></div>
-            <div class="option"><label>Volatility </label><input type="range" id="volatility" value="8" min="0" max="50"/></div>
+            <div class="option"><label>Radius</label><input type="range" id="radius" value="8" min="0" max="25"/></div>
+            <div class="option"><label>Blur</label><input type="range" id="blur" value="8" min="0" max="25"/></div>
+            <div class="option"><label>Intensity</label><input type="range" id="intensity" value="100" min="0" max="100"/></div>
+            <div class="option"><label>Volatility</label><input type="range" id="volatility" value="5" min="0" max="25"/></div>
+            <div class="option"><label>Roughness</label><input type="range" id="roughness" value="4" min="0" max="255"/></div>
+            <div class="option"><label>Monochrome</label><input type="checkbox" id="monochrome"></div>
+            <div class="option"><button onclick="zoom++;">Zoom In</button></div>
+            <div class="option"><button onclick="if (zoom > 1) zoom--;">Zoom Out</button></div>
         </div>
     </nav>
 </body>
